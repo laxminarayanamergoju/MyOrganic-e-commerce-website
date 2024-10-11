@@ -1,0 +1,445 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* Navbar Styles */
+header {
+    background-color: #4CAF50; /* Change to a vibrant green */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+nav h1 {
+    font-size: 1.8rem; /* Increase the font size for the title */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Increased gap between items */
+}
+
+nav ul li {
+    position: relative; /* For the hover effect */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Add padding for a button-like feel */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+nav ul li a:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items on smaller screens */
+        gap: 0.5rem;
+    }
+}
+
+  
+  .hero {
+    height: 100vh;
+    background: url('farm_bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  /* About Us Section */
+.about-section {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Contact Us Section */
+  .contact-section {
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    color: #FF5722;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #FF3D00;
+  }
+  
+  .cta-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #FF5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #FF3D00;
+  }
+  
+  #products {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  header {
+    background-color: #4CAF50; /* Green background for navbar */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center the items vertically */
+    font-size: 1.8rem; /* Increase font size for the site name */
+}
+
+.logo {
+    height: 60px; /* Adjust logo height for better visibility */
+    margin-right: 10px; /* Space between logo and text */
+    border-radius: 10%; /* Slight rounding of logo corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Scale up logo slightly on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Increased gap between items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Highlight color on hover */
+}
+
+ /* Shared Product Page Styles */
+.products-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center; /* Center the grid */
+    flex-wrap: wrap; /* Wrap items to the next line on small screens */
+    gap: 2rem; /* Increased gap between cards */
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 10px; /* More rounded corners */
+    text-align: center;
+    background-color: white; /* White background for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.product-card img {
+    width: 300px; /* Adjust width */
+    height: 200px; /* Adjust height */
+    margin-bottom: 1rem;
+    border-radius: 5px; /* Rounded corners for images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #4CAF50; /* Keep the primary color */
+    margin: 0.5rem 0; /* Add margin for spacing */
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #666; /* Softer color for description */
+    margin-bottom: 1rem; /* Add margin for spacing */
+}
+
+.product-card button {
+    background-color: #4CAF50; /* Primary color for buttons */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-size: 1rem;
+    cursor: pointer; /* Pointer cursor for buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.product-card button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+  /* Contact Section */
+.contact-section {
+    padding: 3rem;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    color: #4CAF50;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .contact-form-container, .contact-details {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  /* Contact Form Styles */
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #FF3D00;
+  }
+  
+  /* Contact Details Styles */
+  .contact-details {
+    text-align: left;
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+  
+  .contact-details h3 {
+    color: #FF5722;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-details p {
+    margin-bottom: 0.5rem;
+  }
+  /* Cart Section */
+.cart-section {
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .cart-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #cart-table th, #cart-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #cart-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .cart-total {
+    margin-top: 2rem;
+    text-align: right;
+  }
+  
+  .checkout-button {
+    padding: 1rem 2rem;
+    background-color: #FF5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Checkout Section */
+  .checkout-section {
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .checkout-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkout-section label {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .checkout-section input, .checkout-section select {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .checkout-section button {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

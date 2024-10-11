@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Vegetables</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>Organic Farm</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vegetables.html">Vegetables</a></li>
+        <li><a href="fruits.html">Fruits</a></li>
+        <li><a href="milk.html">Milk Products</a></li>
+        <li><a href="cart.html">Cart</a></li> 
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Vegetables Section -->
+<section id="products" class="products-section">
+  <h2>Fresh Organic Vegetables</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="carrot.jpeg" alt="Carrots">
+      <h3>Carrots</h3>
+      <p>Freshly harvested organic carrots rich in vitamins and minerals.</p>
+      <p>Price: 35.00 Rs</p>
+      <button onclick="addToCart(1)">Add to Cart</button> <!-- Product ID 1 -->
+    </div>
+    <div class="product-card">
+      <img src="Spinachs.jpeg" alt="Spinach">
+      <h3>Spinach</h3>
+      <p>Rich in iron and packed with nutrients, perfect for healthy meals.</p>
+      <p>Price: 20.00 Rs</p>
+      <button onclick="addToCart(2)">Add to Cart</button> <!-- Product ID 2 -->
+    </div>
+    <div class="product-card">
+      <img src="Tomatoes.jpeg" alt="Tomatoes">
+      <h3>Tomatoes</h3>
+      <p>Juicy, ripe, and organic tomatoes perfect for salads and sauces.</p>
+      <p>Price: 30.00 Rs</p>
+      <button onclick="addToCart(3)">Add to Cart</button> <!-- Product ID 3 -->
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Organic Farm. All rights reserved.</p>
+  </footer>
+  <script src="cart.js"></script>
+</body>
+</html>

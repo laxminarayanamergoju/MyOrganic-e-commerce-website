@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Organic Farm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>Organic Farm</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Checkout Section -->
+  <section id="checkout" class="checkout-section">
+    <h2>Checkout</h2>
+    <form id="checkout-form" action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">Shipping Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment" required>
+        <option value="credit-card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+      </select>
+
+      <button type="submit">Confirm Purchase</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Organic Farm. All rights reserved.</p>
+  </footer>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

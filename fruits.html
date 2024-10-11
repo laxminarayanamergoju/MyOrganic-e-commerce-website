@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Fruits</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>Organic Farm</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vegetables.html">Vegetables</a></li>
+        <li><a href="fruits.html">Fruits</a></li>
+        <li><a href="milk.html">Milk Products</a></li>
+        <li><a href="cart.html">Cart</a></li> 
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Fruits Section -->
+  <section id="fruits" class="products-section">
+    <h2>Fresh Organic Fruits</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="apples.jpg" alt="Apples">
+        <h3>Apples</h3>
+        <p>Crisp and juicy organic apples full of flavor and nutrients.</p>
+        <p>Price: 100.00 Rs</p>
+        <button onclick="addToCart(7)">Add to Cart</button> <!-- Product ID 7 -->
+      </div>
+      <div class="product-card">
+        <img src="bananas.jpg" alt="Bananas">
+        <h3>Bananas</h3>
+        <p>Delicious organic bananas, rich in potassium and fiber.</p>
+        <p>Price: 60.00 Rs</p>
+        <button onclick="addToCart(8)">Add to Cart</button> <!-- Product ID 8 -->
+      </div>
+      <div class="product-card">
+        <img src="oranges.jpg" alt="Oranges">
+        <h3>Oranges</h3>
+        <p>Sweet and tangy organic oranges packed with vitamin C.</p>
+        <p>Price: 30.00 Rs</p>
+        <button onclick="addToCart(9)">Add to Cart</button> <!-- Product ID 9 -->
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Organic Farm. All rights reserved.</p>
+  </footer>
+  <script src="cart.js"></script>
+</body>
+</html>

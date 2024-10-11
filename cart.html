@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Organic Farm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>MyOrganic Farm</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        
+        <li><a href="vegetables.html">Vegetables</a></li>
+        <li><a href="fruits.html">Fruits</a></li>
+        <li><a href="milk.html">Milk Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart-section">
+    <h2>Your Shopping Cart</h2>
+    <div class="cart-container">
+      <table id="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Cart items will be injected here by JavaScript -->
+        </tbody>
+      </table>
+      <div class="cart-total">
+        <h3>Total: Rs <span id="cart-total-price">0.00</span></h3>
+        <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Organic Farm. All rights reserved.</p>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #eef2f3; /* Light gray background */
+}
+
+/* Navbar */
+header {
+    background-color: #4CAF50; /* Green background for navbar */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    position: relative; /* Position relative for dropdowns if needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* Increased gap between items for better spacing */
+}
+
+nav ul li {
+    position: relative; /* Position relative for dropdowns if needed */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Smooth color and scale transition */
+    padding: 0.5rem 0; /* Vertical padding for links */
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Highlight color on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Optional: Add a bottom border for active links */
+nav ul li a.active {
+    border-bottom: 2px solid #ffdd57; /* Bottom border for active link */
+}
+
+/* Optional: Add a dropdown menu style */
+nav ul li ul {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Positioning for dropdown */
+    top: 100%; /* Align below the parent */
+    left: 0;
+    background-color: #4CAF50; /* Same background as navbar */
+    padding: 0.5rem 0;
+    z-index: 100; /* Make sure dropdown appears above other elements */
+    border-radius: 5px; /* Rounded corners for dropdown */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for dropdown */
+}
+
+nav ul li:hover ul {
+    display: block; /* Show dropdown on hover */
+}
+
+nav ul li ul li {
+    width: 150px; /* Fixed width for dropdown items */
+}
+
+nav ul li ul li a {
+    padding: 0.5rem 1rem; /* Padding for dropdown items */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+
+/* About Section Styles */
+.about-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff; /* White background for the about section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    margin: 2rem auto; /* Center with margin */
+    max-width: 800px; /* Maximum width for the section */
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Primary color */
+    margin-bottom: 1rem;
+}
+
+.about-section h3 {
+    font-size: 1.75rem;
+    color: #333; /* Dark text for subheadings */
+    margin-top: 2rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #555; /* Softer text color */
+    line-height: 1.5; /* Better readability */
+    margin: 0.5rem 0 2rem 0; /* Margin for spacing */
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the list */
+}
+
+.about-section ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0.5rem 0; /* Spacing between list items */
+}
+
+/* Team Section Styles */
+.team {
+    display: flex;
+    justify-content: center; /* Center the team members */
+    gap: 2rem; /* Space between team members */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 150px; /* Set a max width for team members */
+}
+
+.team-member img {
+    width: 100%; /* Full width of the card */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 0.5rem; /* Spacing below images */
+    border: 3px solid #4CAF50; /* Green border around images */
+    transition: transform 0.3s; /* Scale effect on hover */
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
